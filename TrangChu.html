@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://luongminhhoang.com/# -->
+<html style="" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Home Page</title> 
+    
+    <meta name="viewport" content="width=device-width">
+    <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/global.css" rel="stylesheet">
+<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+<link href="css/divbox.css" rel="stylesheet">
+<link href="css/bxslider.css" rel="stylesheet">
+<link href="css/style2.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/minibootstrap.css" rel="stylesheet">
+    <script src="Images/modernizr-2.6.2.js"></script>
+
+    
+</head>
+<body cz-shortcut-listen="true">
+
+    <header>
+    <div class="container">
+        <div class="header-top">
+            <div class="logo">
+                <a href="https://luongminhhoang.com/#" class="headerInfo"><img src="Images/chung-nhan.jpg"></a>
+            </div>
+            <div class="search-in">
+                <div class="header-grid">
+                    <ul>
+                        <li class="in-up">Hotline: <a href="tel:0988 936592 (24/7)" class="scroll">1900 900 900 (24/7)</a> <label>|</label></li>
+                        <li class="in-up">Email: <a href="mailto:dmin@tdmu.edu.vn" class="scroll">admin@tdmu.edu.vn</a> </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content-cart">
+                   
+                    <div class="cart">
+                       
+                        <a href="https://luongminhhoang.com/Cart-Add" class="cart-in"> </a>
+                        <span>0</span>
+                    </div>
+                    <div class="search-top">
+                        <div class="search">
+                            <input type="text" class="key_timkiem" value="Nhập từ khóa tìm kiếm..." onfocus="if (this.value == &#39;Nhập từ khóa tìm kiếm...&#39;){this.value=&#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value=&#39;Nhập từ khóa tìm kiếm...&#39;;}">
+                            <input type="button" value="" onclick="SEARCH_btn()">
+                            
+                            <script type="text/javascript">
+                                function SEARCH_btn() {
+                                    var key = $(".key_timkiem").val().replace(/ /g, "+");
+                                    if (key.length < 2 || $(".key_timkiem").val() == 'Nhập từ khóa tìm kiếm...') {
+                                        $(".key_timkiem").focus();
+                                    }
+                                    else window.location.href = "/San-pham/?keysearch=" + key;
+                                }
+                                $('.key_timkiem').keypress(function (event) {
+                                    var keycode = (event.keyCode ? event.keyCode : event.which);
+                                    if (keycode == '13') {
+                                        SEARCH_btn();
+                                    }
+                                });
+                            </script>
+
+                        </div>
+                     
+                    </div>
+
+                    <div class="clearfix"> </div>
+
+                </div>
+                <div class="row">
+                    <div class="can-top" style="width:50%">   </div>
+                    <div class="can-top"> Đăng Ký </div>
+                    <div class="can-top" style="width:10%">   </div>
+                    <div class="can-top"> Đăng Nhập</div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+
+
+        <div class="hr"><hr></div>
+
+        <div class="top-nav menu_desktop" id="menu">
+            <span class="menu"> </span>
+            <ul class="header-menu">
+                <!--  -->
+                <li id="smenu">
+                    <a class="" href="https://luongminhhoang.com/Home/Index">Trang chủ</a>
+                <li/>
+                <li id="smenu">
+                    <a href="https://luongminhhoang.com/Gioi-thieu-355773">Giới thiệu</a>
+                </li>
+                <li id="smenu">
+                    <a class="" href="https://luongminhhoang.com/Home/SanPham">Sản phẩm</a>
+                    </li>
+                <li id="smenu">
+                    <a class="" href="https://luongminhhoang.com/Tin-tuc">Tin tức</a>
+                </li>
+
+
+                <li id="smenu">
+                	<a class="" href="https://luongminhhoang.com/contact/">Liên hệ</a>
+                </li>
+                <!--  -->
+            </ul>
+        </div>
+        <!--  -->
+        <script src="Images/modernizr.custom.js"></script>
+        <script src="Images/jquery.dlmenu.js"></script>
+        <script>
+            $(function () {
+                $('#dl-menu').dlmenu();
+            });
+
+            $(document).ready(function () {
+                $('body').click(function (e) {
+                    $('#dl-menu').dlmenu('closeMenu');
+                });
+            });
+        </script>
+        <div class="dv-mnmb mobile menu_mobile">
+            <a class="a_home" href="https://luongminhhoang.com">trang chủ</a>
+            <div id="dl-menu" class="dl-menuwrapper">
+                <button class="dl-trigger cur "></button>
+                <div class="clear"></div>
+                <ul class="dl-menu">
+                    <!--  -->
+                    <!--  -->
+                    <li class="">
+                        <a class="" href="https://luongminhhoang.com">Trang chủ</a>
+                    </li>
+                    <li class="">
+                        <a href="https://luongminhhoang.com/Gioi-thieu-355773">Giới thiệu</a>
+                    </li>
+                    <li class="">
+                        <a class="" href="https://luongminhhoang.com/San-pham">Sản phẩm</a>
+                        <ul class="dl-submenu"><li><a href="https://luongminhhoang.com/Rau-sach-355765">» Rau sạch</a><ul class="dl-submenu"><li><a href="https://luongminhhoang.com/Nam-sach-Viet-355782">» Nấm sạch Việt</a></li><li><a href="https://luongminhhoang.com/Rau-sach-Da-Lat-355781">» Rau sạch Đà Lạt</a></li><li><a href="https://luongminhhoang.com/Rau-huu-co-355779">» Rau hữu cơ</a></li><li><a href="https://luongminhhoang.com/Rau-an-toan-355778">» Rau an toàn</a></li></ul></li><li><a href="https://luongminhhoang.com/Thit-sach-355766">» Thịt sạch</a><ul class="dl-submenu"><li><a href="https://luongminhhoang.com/Thit-gia-cam-355785">» Thịt gia cầm</a></li><li><a href="https://luongminhhoang.com/Thit-bo-355784">» Thịt bò</a></li><li><a href="https://luongminhhoang.com/Thit-lon-355783">» Thịt lợn</a></li></ul></li><li><a href="https://luongminhhoang.com/Hoa-qua-sach-355768">» Hoa quả sạch</a><ul class="dl-submenu"><li><a href="https://luongminhhoang.com/Nuoc-ep-trai-cay-355777">» Nước ép trái cây</a></li><li><a href="https://luongminhhoang.com/Hoa-qua-say-kho-Da-Lat-355776">» Hoa quả sấy khô Đà Lạt</a></li><li><a href="https://luongminhhoang.com/Hoa-qua-Viet-Nam-355775">» Hoa quả Việt Nam</a></li><li><a href="https://luongminhhoang.com/Hoa-qua-nhap-khau-355774">» Hoa quả nhập khẩu</a></li></ul></li><li><a href="https://luongminhhoang.com/Thit-gia-cam-355769">» Thịt gia cầm</a></li><li><a href="https://luongminhhoang.com/Thuc-pham-so-che-355770">» Thực phẩm sơ chế</a></li><li><a href="https://luongminhhoang.com/Thuy-hai-san-sach-355767">» Thủy - hải sản sạch</a><ul class="dl-submenu"><li><a href="https://luongminhhoang.com/Muc-tuoi-376675">» Mục tươi</a></li></ul></li></ul>
+                    </li>
+                  
+
+                   
+                    <li class=""><a class="" href="https://luongminhhoang.com/contact/">liên hệ</a></li>
+                    <!--  -->
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--  -->
+        <div class="clearfix"> </div>
+    </div>
+    
+<!--  -->
+<div class="clearfix"> </div>
+ 
+</header>
+
+    <main>
+      
+<div class="container">
+    <div class="row body-index">
+        <div class="col-md-3 ">
+            <div class="danhmucsanphamheader"> DANH MỤC SẢN PHẨM</div>
+            <div class="can-top">
+                <ul class="dv_list_dmsp" style="margin-top:3%;">
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Củ sâm Ngọc Linh</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Giảo cổ lam 5 lá, 7 lá</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Chuổi hột rừng</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Sơn trà(Táo mèo)</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Rễ khai</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Chè dây</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Sâm cau đỏ</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Lá khổ qua rừng</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Dây cứt quạ</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Lá sâm Ngọc Linh</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a href="https://luongminhhoang.com/Rau-sach-355765">Lá bầu đường(Lạc Tiên)</a>
+                    </li>
+                    <li class="can-top-danhmucsanpham">
+                        <a>Hà Thủ Ô</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-sm-6 sanphamgioithieu">
+                    <span class="roll ">
+                        <a href="https://luongminhhoang.com/#" class="centered">CHI TIẾT</a>
+                        <a class="bottom-right text-datmua" style="color:#ff6a00" href="https://luongminhhoang.com/#">Đặt mua</a>
+                    </span>
+                    <img src="Images/namlinhchi.jpg">
+                    <a class="bottom-left text-sanpham">Nấm<br>40.000đ</a>
+                </div>
+                <div class="col-sm-6 sanphamgioithieu ">
+                    <span class="roll ">
+                        <a href="https://luongminhhoang.com/#" class="centered">CHI TIẾT</a>
+                        <a class="bottom-right text-datmua" style="color:#ff6a00" href="https://luongminhhoang.com/#">Đặt mua</a>
+                    </span>
+                    <img src="Images/taomeo.jpg">
+                    <a class="bottom-left text-sanpham">Nấm<br>40.000đ</a>
+                </div>
+
+            </div>
+            <div class="row" style="margin-top:30px">
+                <div class="col-md-6 sanphamgioithieu">
+                    <span class="roll ">
+                        <a href="https://luongminhhoang.com/#" class="centered">CHI TIẾT</a>
+                        <a class="bottom-right text-datmua" style="color:#ff6a00" href="https://luongminhhoang.com/#">Đặt mua</a>
+                    </span>
+                    <img src="Images/taomeo.jpg">
+                  
+                </div>
+                <div class="col-md-6 sanphamgioithieu">
+                    <span class="roll ">
+                        <a href="https://luongminhhoang.com/#" class="centered">CHI TIẾT</a>
+                        <a class="bottom-right text-datmua" style="color:#ff6a00" href="https://luongminhhoang.com/#">Đặt mua</a>
+                    </span>
+                    <img src="Images/namlinhchi.jpg">
+                    <a class="bottom-left text-sanpham">Nấm<br>40.000đ</a>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <button class="danhsachsanpham-banchay-moi">Mới</button>
+            <button class="danhsachsanpham-banchay-moi">Bán chạy</button>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-3 "><button class="danhsachsanpham-xemtatca">Xem tất cả</button></div>
+        <div class=" row hr1"><hr></div>
+    </div>
+    <div class="hr1"><hr></div>
+    <div class="row can-top">
+        <!--  -->
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="centered">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+                  <div class="dv-sanpham-child">
+                      <div class="sanpham-container">
+                          <span class="roll " style="width:240px">
+                          </span>
+                          <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                              <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                              <div class="middle">
+                                  <div class="text">Chi tiết</div>
+                              </div>
+                              <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                          </a>
+                      </div>
+                      <div class="row can-top">
+                          <div class="col-md-6">
+                              <div class="price-sp">
+                                  20,000 <sup> đ</sup>
+                              </div>
+
+                          </div>
+                          <div class="col-md-6">
+                              <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                          </div>
+                      </div>
+                  </div>
+        </div>          <!--  -->
+    </div>
+    <div class="loaisanpham text-center"> SẢN PHẨM LOẠI 1</div>
+    <div class="row">
+        <div class="col-md-3">
+            <button class="danhsachsanpham-banchay-moi">Mới</button>
+            <button class="danhsachsanpham-banchay-moi">Bán chạy</button>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-3 "><button class="danhsachsanpham-xemtatca">Xem tất cả</button></div>
+        <div class="hr1"><hr></div>
+    </div>
+    <div class="hr1"><hr></div>
+    <div class="row can-top">
+        <!--  -->
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>          <!--  -->
+    </div>
+    <div class="loaisanpham text-center"> SẢN PHẨM LOẠI 2</div>
+    <div class="row">
+        <div class="col-md-3">
+            <button class="danhsachsanpham-banchay-moi">Mới</button>
+            <button class="danhsachsanpham-banchay-moi">Bán chạy</button>
+        </div>
+        <div class="col-md-6"></div>
+        <div class="col-md-3 "><button class="danhsachsanpham-xemtatca">Xem tất cả</button></div>
+        <div class="hr1"><hr></div>
+    </div>
+    <div class="hr1"><hr></div>
+    <div class="row can-top">
+        <!--  -->
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div><div class="col-md-3 col-sm-4 col-xs-6 col-min-12 look dv-sanpham">
+            <div class="dv-sanpham-child">
+                <div class="sanpham-container">
+                    <span class="roll " style="width:240px">
+                    </span>
+                    <a href="https://luongminhhoang.com/Chuoi-laba-355837">
+                        <img class="img-responsive sanpham-image" src="Images/namlinhchi.jpg" alt="Chuối laba">
+                        <div class="middle">
+                            <div class="text">Chi tiết</div>
+                        </div>
+                        <div class="bottom-left-infor">Tinh Dầu Treo Sả Chanh <br> Venci 8ml</div>
+                    </a>
+                </div>
+                <div class="row can-top">
+                    <div class="col-md-6">
+                        <div class="price-sp">
+                            20,000 <sup> đ</sup>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                        <a href="https://luongminhhoang.com/Chuoi-laba-355837" class="btn  btn-1c">ĐẶT MUA</a>
+                    </div>
+                </div>
+            </div>
+        </div>          <!--  -->
+    </div>
+    <div class="loaisanpham text-center"> TIN TỨC</div>
+    <div class="row can-top">
+        <div class="col-md-6 col-sm-6 content-bottom-tintuc">
+            <div class="dv-tintuc">
+                <div class="dv-tinleft">
+                    <a href="https://luongminhhoang.com/suc-hut-dau-tu-may-nong-nghiep-rat-lon"><img class="img-responsive" src="Images/taomeo.jpg" alt="Sức hút đầu tư máy nông nghiệp rất lớn"></a>
+                </div>
+                <div class="dv-tinright">
+                    <div class="dv-homett">
+                        <div class="tit"><a href="https://luongminhhoang.com/suc-hut-dau-tu-may-nong-nghiep-rat-lon">Sức hút đầu tư máy nông nghiệp rất lớn</a></div>
+                        <p>Cho đến tháng cuối năm 2011, ở ĐBSCL hoạt động đầu tư cơ giới hóa nông nghiệp, thiết bị máy móc...</p>
+                    </div>
+                    <a href="https://luongminhhoang.com/suc-hut-dau-tu-may-nong-nghiep-rat-lon" class="hvr-icon-wobble-horizontal">Xem ngay</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>  <div class="col-md-6 col-sm-6 content-bottom-tintuc">
+            <div class="dv-tintuc">
+                <div class="dv-tinleft">
+                    <a href="https://luongminhhoang.com/-tao-viec-lam-tu-dich-vu-nong-nghiep"><img class="img-responsive" src="Images/taomeo.jpg" alt=" Tạo việc làm từ dịch vụ nông nghiệp"></a>
+                </div>
+                <div class="dv-tinright">
+                    <div class="dv-homett">
+                        <div class="tit"><a href="https://luongminhhoang.com/-tao-viec-lam-tu-dich-vu-nong-nghiep"> Tạo việc làm từ dịch vụ nông nghiệp</a></div>
+                        <p>Đây là hình thức tạo việc làm do nông dân tự liên kết lại; vừa tạo việc làm cho LĐ nông thôn, vừa...</p>
+                    </div>
+                    <a href="https://luongminhhoang.com/-tao-viec-lam-tu-dich-vu-nong-nghiep" class="hvr-icon-wobble-horizontal">Xem ngay</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>  <div class="col-md-6 col-sm-6 content-bottom-tintuc">
+            <div class="dv-tintuc">
+                <div class="dv-tinleft">
+                    <a href="https://luongminhhoang.com/-lao-dong-nong-nghiep-so-luong-lon-chat-luong-thap"><img class="img-responsive" src="Images/taomeo.jpg" alt=" Lao động nông nghiệp: Số lượng lớn, chất lượng thấp"></a>
+                </div>
+                <div class="dv-tinright">
+                    <div class="dv-homett">
+                        <div class="tit"><a href="https://luongminhhoang.com/-lao-dong-nong-nghiep-so-luong-lon-chat-luong-thap"> Lao động nông nghiệp: Số lượng lớn, chất lượng thấp</a></div>
+                        <p>Trong 10 năm qua, đã có 15 triệu lao động có việc làm, trong đó, khoảng 50% làm trong lĩnh vực nông nghiệp...</p>
+                    </div>
+                    <a href="https://luongminhhoang.com/-lao-dong-nong-nghiep-so-luong-lon-chat-luong-thap" class="hvr-icon-wobble-horizontal">Xem ngay</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>  <div class="col-md-6 col-sm-6 content-bottom-tintuc">
+            <div class="dv-tintuc">
+                <div class="dv-tinleft">
+                    <a href="https://luongminhhoang.com/-phat-trien-dich-vu-nong-nghiep-niem-vui-cho-nha-nong"><img class="img-responsive" src="Images/taomeo.jpg" alt=" Phát triển dịch vụ nông nghiệp: Niềm vui cho nhà nông"></a>
+                </div>
+                <div class="dv-tinright">
+                    <div class="dv-homett">
+                        <div class="tit"><a href="https://luongminhhoang.com/-phat-trien-dich-vu-nong-nghiep-niem-vui-cho-nha-nong"> Phát triển dịch vụ nông nghiệp: Niềm vui cho nhà nông</a></div>
+                        <p>Ra ngõ gặp dịch vụ, đó là mơ ước của bất cứ người nông dân nào và trong những năm qua, việc phát...</p>
+                    </div>
+                    <a href="https://luongminhhoang.com/-phat-trien-dich-vu-nong-nghiep-niem-vui-cho-nha-nong" class="hvr-icon-wobble-horizontal">Xem ngay</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>                <div class="clearfix"> </div>
+    </div>
+
+
+</div>
+
+    </main>
+
+    
+<footer>
+   
+    
+        <div class="footer footer-contact">
+            <div class="hr"><hr></div>
+            <div class="row" style="margin-top:20px">
+                <div class="col-md-1"></div>
+                <div class="col-md-5">THÔNG TIN LIÊN HỆ
+                    <br>
+                    <br>
+                    <p><span class="iconfooter"><img src="Images/diachi.png"></span>
+                    Địa chỉ: 6 Trần Văn Ơn, Phú Hòa, Thủ Dầu Một, Bình Dương
+    <br>
+    <br> <span class="iconfooter"><img src="Images/phone.png"></span>
+                    Điện thoại: 0988 936 592
+    <br>
+    <br><span class="iconfooter"><img src=><span>
+                     Email: admin@tdmu.edu.vn
+</p>
+                </div>
+                <div class="col-md-5">
+                    <iframe class="map_contact" src="Images/embed.html" allowfullscreen=""></iframe>
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+</div></footer>
+
+
+  </body></html>
